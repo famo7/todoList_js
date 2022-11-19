@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="main.js"></script></head>
+<body data-theme="aqua">
+    <div class="container h-screen">
+        <div class="projects">
+            <h4>Projects</h4>
+            <ul class="menu  projectMenu bg-base-100 w-56 rounded-box">
+                
+                
+                <li>
+                    <a href="#my-modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        add project
+
+
+                    </a>
+                    <div class="modal" id="my-modal">
+                        <div class="modal-box">
+                            <input type="text" placeholder="Project name" class="input w-full max-w-xs"
+                                id="projectName" />
+                            <div class="modal-action">
+                                <a href="#" class="btn" id="addProject">Add Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <div>
+
+            </div>
+        </div>
+        <div class="todos">
+            <ul class="menu todoMenu bg-base-100 w-56 p-2 rounded-box">
+
+                <li>
+                    <a href="#my-modal-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        add Todo
+                    </a>
+                </li>
+            </ul>
+            <div class="modal" id="my-modal-2">
+                <div class="modal-box">
+                    <input type="text" placeholder="Title" class="input input-bordered input-primary w-full  mb-2"
+                        id="title" required />
+                    <input type="text" placeholder="Description" class="input input-bordered input-primary w-full mb-2"
+                        id="description" required />
+                        <div class="my-3 ml-4">
+                            
+                            <input type="date" id="todoDueDate">
+
+                        </div>
+                    <select class="select1 select-ghost select-lg w-full max-w-xs ">
+                        <option disabled selected>Priority</option>
+                        <option>high</option>
+                        <option>medium</option>
+                        <option>low</option>
+                    </select>
+                    <div class="modal-action">
+                        <a href="#" class="btn" id="addTodo">Add Todo</a>
+                    </div>
+                </div>
+            </div>
+            <div id="todoList">
+                <ul>
+                   
+                </ul>
+            </div>
+            <div class="modal" id="my-modal-3">
+                <div class="modal-box">
+                    <input type="text" placeholder="Title" class="input input-bordered input-primary w-full  mb-2" id="editTitle"
+                        required />
+                    <input type="text" placeholder="Description" class="input input-bordered input-primary w-full mb-2"
+                        id="editDescription" required />
+                    <div class="my-3 ml-4">
+            
+                        <input type="date" id="editTodoDueDate">
+            
+                    </div>
+                    <select class="select2 select-ghost select-lg w-full max-w-xs ">
+                        <option disabled selected>Priority</option>
+                        <option>high</option>
+                        <option>medium</option>
+                        <option>low</option>
+                    </select>
+                    <div class="modal-action">
+                        <a href="#" class="btn" id="editTodo">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
